@@ -3,52 +3,138 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 18px;
   line-height: 1.8;
-}
-
-.post-content {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
+  padding: 20px;
 }
 
-.post-content h1, .post-content h2, .post-content h3 {
-  margin-top: 2em;
-  margin-bottom: 1em;
-  font-weight: 600;
+/* 文章标题 */
+h1 {
+  font-size: 2em;
+  margin: 1.5em 0 1em;
+  color: #333;
 }
 
-.post-content p {
-  margin-bottom: 1.5em;
+h2 {
+  font-size: 1.6em;
+  margin: 1.5em 0 1em;
+  color: #444;
+  border-bottom: 2px solid #00d1b2;
+  padding-bottom: 0.3em;
 }
 
-.post-content table {
+h3 {
+  font-size: 1.3em;
+  margin: 1.3em 0 0.8em;
+  color: #555;
+}
+
+/* 表格优化 */
+table {
   width: 100%;
   margin: 1.5em 0;
   border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
-.post-content th, .post-content td {
-  padding: 12px;
-  border: 1px solid #ddd;
+th {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 14px 12px;
+  font-weight: 600;
   text-align: left;
 }
 
-.post-content th {
-  background-color: #f5f5f5;
-  font-weight: 600;
+td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
 }
 
-.post-content blockquote {
+tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+tr:hover {
+  background-color: #f0f0f0;
+}
+
+/* 引用块 */
+blockquote {
   border-left: 4px solid #00d1b2;
-  padding-left: 1em;
+  padding: 0.5em 1em;
   margin: 1.5em 0;
-  color: #666;
+  background-color: #f8f9fa;
+  border-radius: 0 4px 4px 0;
+  color: #555;
 }
 
-.post-content a {
+/* 链接 */
+a {
   color: #00d1b2;
   text-decoration: none;
+  transition: color 0.2s;
 }
 
-.post-content a:hover {
+a:hover {
+  color: #009688;
   text-decoration: underline;
+}
+
+/* 代码块 */
+pre, code {
+  background-color: #f6f8fa;
+  border-radius: 4px;
+  font-family: "SF Mono", Monaco, "Cascadia Code", monospace;
+}
+
+pre {
+  padding: 1em;
+  overflow-x: auto;
+}
+
+code {
+  padding: 0.2em 0.4em;
+  font-size: 0.9em;
+}
+
+/* 分隔线 */
+hr {
+  border: none;
+  border-top: 2px solid #eee;
+  margin: 2em 0;
+}
+
+/* 列表 */
+ul, ol {
+  margin: 1em 0;
+  padding-left: 2em;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+/* 文章元信息 */
+.post-meta {
+  color: #888;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+
+/* 响应式 */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 15px;
+  }
+  
+  table {
+    font-size: 0.9em;
+  }
+  
+  th, td {
+    padding: 8px 6px;
+  }
 }
