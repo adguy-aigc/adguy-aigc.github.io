@@ -1,6 +1,6 @@
 title: adguy's Blog
 description: Building things, learning daily
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes@4.24.0
 minimal_mistakes_skin: default
 
 author:
