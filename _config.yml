@@ -1,3 +1,20 @@
 title: adguy's Blog
 description: Building things, learning daily
-theme: minima
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: default
+
+author:
+  name: adguy
+  avatar: "/assets/images/avatar.png"
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+
+plugins:
+  - jekyll-remote-theme
