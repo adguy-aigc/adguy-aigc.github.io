@@ -1,9 +1,19 @@
 title: adguy's Blog
 description: Building things, learning daily
-theme: minima
+remote_theme: chrisrhymes/bulma-clean-theme@v0.17.0
 
 author:
   name: adguy
+  avatar: "/assets/images/avatar.png"
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author_profile: true
 
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
