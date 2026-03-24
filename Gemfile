@@ -1,2 +1,1 @@
-source "https://rubygems.org"
-gemspec
+remote_theme: mmistakes/minimal-mistakes@4.28.0
