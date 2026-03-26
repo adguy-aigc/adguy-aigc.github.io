@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title: "GitHub Trending 日报 | 2026年3月25日星期三"
 excerpt: "昨天 GitHub 上 Star 增长最快的 10 个开源项目"
 categories:
